@@ -17,6 +17,7 @@ void Print_MAT(int arr[][MAT_SIZE]) {
             printf("%d\t", arr[row][col]);
         printf("\n");
     }
+    printf("\n");
 }
 
 int main() {
@@ -24,5 +25,6 @@ int main() {
     int B[MAT_SIZE][MAT_SIZE] = {};
 
     Transpose_Mat(A, B);
+    Print_MAT(A);
     Print_MAT(B);
 }
